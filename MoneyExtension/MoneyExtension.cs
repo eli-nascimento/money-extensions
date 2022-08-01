@@ -10,7 +10,6 @@ public  static int ToCents(this decimal amount){
         .Replace(".","");
         if(string.IsNullOrEmpty(text))
             return 0;
-
         int.TryParse(text,out var result);
         return result;
     }
